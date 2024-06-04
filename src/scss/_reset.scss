@@ -1,0 +1,140 @@
+/*
+	
+	RESET
+	--------------------------------------------------------------------
+	Reset montado a partir de vários resets, usando apenas o necessário.
+	
+
+*/
+
+html, body {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+html, body, div, span, object, iframe, img, table, caption, thead, tbody, tfoot, tr, th, td, article, aside, canvas, details, figure, hgroup, menu, nav, footer, header, section, summary, mark, audio, video, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, legend, label, button, input, select, textarea, form {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ 
+:before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+main, article, aside, canvas, details, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video {
+	display: block;
+}
+ 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	caption, th, td {
+		text-align: left;
+		vertical-align: middle;
+		padding: 0;
+	}
+}
+ 
+a img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	list-style-position: inside;
+}
+
+blockquote, q {
+	quotes: none;
+
+	&:before, &:after {
+		content: '';
+		content: none;
+	}
+}
+ 
+:focus {
+	outline: 0;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
+	overflow: auto;
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	background: transparent;
+	font-family: inherit;
+
+	&[disabled] {
+		cursor: default;
+	}
+}
+
+textarea {
+	resize: vertical;
+	font-family: inherit;
+}
+
+::-moz-selection {
+	background: $cor1;
+	color: white;
+	text-shadow: none;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+	outline: 0px !important;
+	-webkit-appearance: none;
+	box-shadow: none !important;
+}
+input,
+textarea,
+.form-control {
+	&:focus {
+		box-shadow: none;
+		border: none;
+	}
+}

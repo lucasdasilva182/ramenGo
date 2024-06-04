@@ -1,0 +1,38 @@
+header {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: $menuHeight;
+  display: flex !important;
+  align-items: stretch;
+  padding: 0 20px !important;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: none;
+    border: none;
+    box-shadow: none;
+
+    img {
+      width: 124px;
+      margin: 0;
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: $mobile) {
+  header {
+    .container {
+      padding: 15px !important;
+      justify-content: center;
+    }
+  }
+}

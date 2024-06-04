@@ -1,0 +1,106 @@
+//pedido
+.wrapper-pedido {
+  padding: 19px 20px 125px !important;
+  margin: 0 auto;
+  form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    h1 {
+      margin-top: 96px;
+    }
+    .radio-container {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      .input-wrapper {
+        cursor: pointer;
+        min-width: 320px;
+        min-height: 316px;
+        max-width: 320px;
+        max-height: 316px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $cor4;
+        padding: 40px 32px;
+        border-radius: 11px;
+        filter: drop-shadow(0px 4px 12px rgba(219, 219, 188, 0.6));
+        label {
+          cursor: pointer;
+        }
+        .name,
+        .description,
+        .price {
+          text-align: center;
+        }
+        .name {
+          font-size: 1.5rem;
+          color: $cor1;
+          font-weight: 900;
+        }
+        .description {
+          font-weight: 500;
+          font-size: 0.85rem;
+          margin-bottom: 1rem;
+        }
+        .price {
+          font-size: 1.5rem;
+          color: $cor2;
+          font-weight: 900;
+        }
+        &.active,
+        &:hover {
+          background: $cor1;
+          .name,
+          .description {
+            color: $cor4 !important;
+          }
+          .price {
+            color: $cor3;
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 0 !important;
+    padding-bottom: 40px !important;
+    gap: 0;
+
+    form {
+      h1 {
+        &:first-child {
+          margin-top: 40px;
+        }
+        margin-top: 62px;
+      }
+      p {
+        margin-top: 0.5rem;
+      }
+      .radio-container {
+        margin-top: 0;
+        overflow-x: auto;
+        width: 111%;
+        justify-content: unset;
+        align-items: unset;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+    .btn {
+      margin-top: 48px;
+    }
+  }
+}

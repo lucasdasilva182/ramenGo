@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Ramen Go!</title>
+    <meta name="author" content="Lucas Silva" />
+    <meta name="copyright" content="2023 © Lucas Silva" />
+    <meta
+      name="description"
+      content="Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/master.min.css" />
+    <link
+      rel="icon"
+      href="./src/assets/images/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- ### MENU ### -->
+      <header class="header show" id="header">
+        <div class="container">
+          <a href="/">
+            <img
+              id="menuImg"
+              src="./src/assets/images/logo.svg"
+              alt="Ramen Go!"
+            />
+          </a>
+        </div>
+      </header>
+
+      <!-- ### ORDER-SUCCESS ### -->
+      <section id="order-success">
+        <div class="wrapper-order-success container">
+          <div class="wrap-left">
+            <img id="img-order-success" />
+            <h3>Your Order:</h3>
+            <h1 id="title-order-success"></h1>
+          </div>
+        </div>
+        <div id="half" class="wrapper-order-success container">
+          <div class="wrap-right">
+            <img
+              src="./src/assets/images/logo-success.svg"
+              alt="Success Order!"
+            />
+            <h3>どもありがとうございます。</h3>
+
+            <h1>Your order is being prepared</h1>
+            <p>Hold on, when you least expect you will be eating your rámen.</p>
+
+            <a href="/" class="btn">
+              Place new order
+              <span class="arrow"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="loader-modal" class="loader-modal">
+      <div class="loader"></div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="./src/js/dist/master.min.js"
+      defer
+    ></script>
+  </body>
+</html>
