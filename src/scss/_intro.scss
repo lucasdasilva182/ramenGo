@@ -99,5 +99,18 @@
     img {
       max-width: 60% !important;
     }
+
+    .wrap {
+      .content {
+        .titles {
+          .japanese-title {
+            font-size: 3rem;
+          }
+          .main-title {
+            font-size: 8rem;
+          }
+        }
+      }
+    }
   }
 }
