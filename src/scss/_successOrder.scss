@@ -53,4 +53,9 @@
       gap: 1rem;
     }
   }
+  @media (max-height: 750px) and (orientation: portrait) {
+    img {
+      max-width: 70% !important;
+    }
+  }
 }
